@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Configure the type you'd like CastEnv to cast a given ENV
 value for you to.  Booleans are considered true if the original
-ENV value is the string 'true' or 'TRUE'.
+ENV value is the string 'true' or 'TRUE', otherwise they are false.
 
 ```ruby
 CastEnv.casts :spam_checks_enabled, :Boolean
@@ -47,7 +47,7 @@ to throw an exception than assume a potentially harmful default.
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/cast_env/fork )
+1. Fork it ( http://github.com/bemurphy/cast_env/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

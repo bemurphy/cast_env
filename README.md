@@ -43,7 +43,9 @@ CastEnv[:max_projects].class # => Fixnum
 
 Note that if you try and grab a value that doesn't exist, you'll get
 a `KeyError` exception.  Since we are casting data, it makes better sense
-to throw an exception than assume a potentially harmful default.
+to throw an exception than assume a potentially harmful value like '' getting
+converted to 0.  Better to fail fast than fail weird here.
+
 
 ## Contributing
 

@@ -2,7 +2,9 @@
 
 CastEnv can retrieve and cast basic types from your ENV for you.
 
-Currently it handles Integers and Booleans.
+Currently it handles Integers, Booleans and Strings.  Strings are
+the implied type for values in ENV anyhow, but they are available
+to provide a consistent interface if you choose to use it.
 
 ## Installation
 

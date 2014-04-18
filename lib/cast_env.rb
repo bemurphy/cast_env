@@ -2,6 +2,7 @@ require "cast_env/version"
 
 module CastEnv
   module Type
+    String  = ->(x) { x }
     Boolean = ->(x) { x.to_s.downcase == 'true' }
     Integer = ->(x) { x.to_i }
   end

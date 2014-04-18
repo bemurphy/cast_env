@@ -3,6 +3,12 @@ require "minitest/spec"
 require "minitest/autorun"
 require "cast_env"
 
+describe CastEnv::Type::String do
+  it "returns the string value matching the ENV" do
+    CastEnv::Type::String.call('ZzyzX').must_equal 'ZzyzX'
+  end
+end
+
 describe CastEnv::Type::Boolean do
   it "is compares the downcased value to 'true'" do
     CastEnv::Type::Boolean.call('true').must_equal true
